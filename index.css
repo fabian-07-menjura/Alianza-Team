@@ -721,3 +721,26 @@ footer {
     padding-left: 0;
   }
 }
+
+#btnTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  background-color: #28a745; /* verde (cámbialo al color de tu landing) */
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  display: none; /* oculto al inicio */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+#btnTop:hover {
+  background-color: #218838; /* verde más oscuro */
+  transform: scale(1.1);
+}
