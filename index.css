@@ -1,0 +1,723 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --verde: #02843f;
+  --blanco: #ffff;
+  --amarillo: #fdc426;
+  --gris: #5c6767;
+}
+a {
+  text-decoration: none;
+}
+p {
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  font-family: "Red Hat Display", sans-serif;
+  letter-spacing: 0%;
+  line-height: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0 30px;
+}
+
+h2 {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 800;
+  font-style: ExtraBold;
+  font-size: 28px;
+  line-height: 35px;
+  letter-spacing: 0%;
+}
+
+@media (max-width: 1040px) {
+  h2 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 953px) {
+  h2 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+.encabezado {
+  padding: 20px 5%;
+}
+.cuerpo {
+  padding: 10px 5%;
+}
+
+.boton {
+  background: var(--amarillo);
+  border: none;
+  border-radius: 35px;
+  padding: 4px 20px;
+  transition: all 0.3s ease-in-out;
+  a {
+    color: var(--blanco);
+    cursor: pointer;
+    font-size: 23px;
+    font-weight: 900;
+    text-decoration: none;
+  }
+}
+
+.card {
+  border-radius: 21px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  overflow: hidden;
+}
+.texto {
+  padding: 20px;
+}
+
+/*---------------------- Estilos del menu --------------------------*/
+.encabezado {
+  text-align: center;
+  position: relative;
+
+  ul {
+    border-bottom: 2px solid var(--verde);
+    color: var(--verde);
+    display: flex;
+    font-size: 16px;
+    font-weight: 400;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    padding: 20px 0;
+    text-decoration: none;
+  }
+
+  a {
+    color: var(--verde);
+    text-decoration: none;
+    background: var(--blanco);
+    padding: 15px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  a:hover {
+    background: #02843f;
+    color: var(--blanco);
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .hamburger {
+    background: none;
+    border: none;
+    color: var(--verde);
+    cursor: pointer;
+    display: none;
+    font-size: 28px;
+    z-index: 1001;
+  }
+
+  .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 1000;
+  }
+
+  @media (max-width: 1000px) {
+    ul {
+      background: #fff;
+      border-right: 2px solid var(--verde);
+      flex-direction: column;
+      height: 70vh;
+      left: 0;
+      padding: 40px 20px;
+      position: fixed;
+      top: 0;
+      transform: translateX(-100%);
+      transition: transform 0.3s ease-in-out;
+      width: 250px;
+      z-index: 1001;
+    }
+
+    ul.active {
+      transform: translateX(0);
+    }
+
+    .hamburger {
+      display: block;
+      left: 20px;
+      position: absolute;
+      top: 30px;
+    }
+
+    .overlay.active {
+      display: block;
+    }
+  }
+}
+
+/*---------------- Estilos primera seccion ---------------------*/
+.primera_seccion {
+  display: flex;
+  justify-content: center;
+  .aliados {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10px;
+  }
+  .card {
+    position: relative;
+    overflow: hidden;
+  }
+  .card img {
+    object-fit: cover;
+    padding: 5px;
+    transition: transform 0.5s ease-in-out;
+  }
+  .card:hover img {
+    transform: scale(1.1);
+  }
+
+  .texto {
+    align-items: initial;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    justify-content: flex-end;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+  }
+  .boton {
+    align-self: flex-start;
+  }
+  .boton:hover {
+    background-color: #eeb720;
+    transform: scale(1.05);
+  }
+  h2 {
+    margin: 0;
+  }
+  .aliados_cocina h2 {
+    font-size: 36px;
+  }
+  .clientes_aliados h2,
+  trabajemos_juntos h2 {
+    font-size: 25px;
+  }
+  .aliados_cocina p {
+    width: 400px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .primera_seccion {
+    flex-direction: column;
+
+    .aliados {
+      flex-direction: column;
+    }
+    .aliados_cocina h2,
+    trabajemos_juntos h2 {
+      font-size: 24px;
+    }
+    .clientes_aliados h2 {
+      font-size: 32px;
+    }
+    .aliados_cocina .boton {
+      display: none;
+    }
+    .aliados_cocina p {
+      width: 300px;
+    }
+  }
+}
+
+/*-------------------------Estilos segunda seccion ------------*/
+.segunda_seccion {
+  display: flex;
+  justify-content: space-between;
+
+  div {
+    align-items: center;
+    background-color: blueviolet;
+    border-radius: 21px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.55);
+    display: flex;
+    height: 139px;
+    justify-content: center;
+    width: 250px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .segunda_seccion {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    padding: 10px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+  .segunda_seccion::-webkit-scrollbar {
+    display: none;
+  }
+  .segunda_seccion .card {
+    flex: 0 0 50%;
+    scroll-snap-align: center;
+  }
+}
+
+/* --------------Estilos Tercera Seccion -------------------- */
+.tercera_seccion {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  .texto p {
+    font-size: 14px;
+  }
+  .ingrediente_silencioso {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    overflow: hidden;
+    position: relative;
+    .texto {
+      box-sizing: border-box;
+      flex: 0 0 55%;
+    }
+    .imagen {
+      display: flex;
+      flex: 0 0 45%;
+    }
+    .imagen img {
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+  .btn_ingrediente_secreto {
+    background: var(--verde);
+    border: none;
+    border-radius: 25px;
+    bottom: 15px;
+    color: #fff;
+    cursor: pointer;
+    left: 63%;
+    position: absolute;
+  }
+  .btn_ingrediente_secreto:hover {
+    background-color: #1e7e32;
+    transform: scale(1.05);
+  }
+}
+
+.nuestro_ingrediente {
+  display: flex;
+  flex-direction: column;
+  .acciones {
+    display: flex;
+    flex-direction: inherit;
+    margin: 0;
+    padding: 10px;
+  }
+  .boton {
+    align-self: flex-end;
+    margin-right: 20px;
+  }
+  .boton:hover {
+    background-color: #eeb720;
+    transform: scale(1.05);
+  }
+  h2 {
+    margin: 5px;
+  }
+  .img_nuestro_ingrediente {
+    overflow: hidden;
+  }
+  .img_nuestro_ingrediente img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+/* Card receta ocupa toda la segunda columna (2 filas de alto) */
+.receta_semana {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  border-radius: 42px;
+
+  .texto {
+    padding: 30px 20px 30px;
+  }
+  .boton {
+    padding: 10px 40px;
+    margin-bottom: 30px;
+  }
+  .boton:hover {
+    background-color: #1e7e32;
+    transform: scale(1.05);
+  }
+  .boton a {
+    font-size: 15px;
+  }
+
+  .img_receta_semana {
+    height: auto;
+    overflow: hidden;
+  }
+
+  .img_receta_semana img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .tercera_seccion {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    .texto p {
+      font-size: 12px;
+    }
+    .btn_ingrediente_secreto {
+      left: 49%;
+    }
+  }
+  .receta_semana {
+    grid-column: 1;
+    grid-row: auto;
+  }
+  .receta_semana > p {
+    display: none;
+  }
+}
+
+/* ------------Estilos cuarta seccion------------------------ */
+.cuarta_seccion {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  div {
+    overflow: hidden;
+    background: #74bb20;
+  }
+  div > img {
+    max-height: 196px;
+    object-fit: cover;
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 31px;
+    line-height: 30px;
+  }
+
+  .boton {
+    background: var(--verde);
+    display: block;
+    margin: 0 auto;
+  }
+  .boton:hover {
+    background-color: #1e7e32;
+    transform: scale(1.05);
+  }
+  .texto {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .texto p {
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .cuarta_seccion {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .cuarta_seccion .card:nth-last-child(-n + 2) {
+    display: none;
+  }
+}
+
+/* ------------Estilos quinta seccion -------------------- */
+.quinta_seccion {
+  .contenedor_img {
+    background-image: url("assets/inovacion-y-responsabilidad-con-el-planeta.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .contenedor_img > div {
+    padding: 180px 100px;
+    width: 40%;
+    background-image: linear-gradient(
+      to right,
+      var(--verde) 5%,
+      rgba(2, 132, 63, 0) 100%
+    );
+  }
+  .boton a {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  .boton:hover {
+    background-color: #eeb720;
+    transform: scale(1.05);
+  }
+  p {
+    text-align: justify;
+  }
+}
+@media (max-width: 900px) {
+  .quinta_seccion {
+    .contenedor_img > div {
+      padding: 45px;
+      width: auto;
+    }
+  }
+}
+
+/* ---------Estilos seccion necesitas ayuda ------------- */
+.ayuda {
+  position: relative;
+  margin: 0 auto;
+  border-radius: 20px;
+  overflow: hidden;
+  text-align: center;
+
+  img {
+    width: 100%;
+  }
+}
+
+.contenido {
+  position: absolute;
+  top: 20%;
+  right: 25%;
+  transform: translateY(-50%);
+  color: var(--blanco);
+  max-width: 500px;
+}
+
+.contenido h2 {
+  font-size: 50px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.contenido p {
+  font-size: 19px;
+  margin-bottom: 20px;
+  text-align: left;
+  line-height: 25px;
+}
+
+.btn-whatsapp img {
+  width: 100px;
+  position: absolute;
+  top: 150%;
+  right: -40%;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 1230px) {
+  .contenido {
+    position: absolute;
+    top: 25%;
+    right: 18%;
+    transform: translateY(-50%);
+    color: var(--blanco);
+    max-width: 500px;
+  }
+  .btn-whatsapp img {
+    width: 100px;
+    position: absolute;
+    top: 140%;
+    right: -20%;
+  }
+}
+
+@media (max-width: 1070px) {
+  .contenido {
+    top: 20%;
+    right: 15%;
+  }
+  .btn-whatsapp img {
+    top: 120%;
+    right: -20%;
+  }
+  .btn-whatsapp img {
+    width: 100px;
+    position: absolute;
+    top: 140%;
+    right: -9%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .contenido {
+    max-width: 400px;
+    top: 25%;
+    right: 150px;
+    h2 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 15px;
+      line-height: 20px;
+    }
+  }
+}
+@media (max-width: 860px) {
+  .contenido {
+    max-width: 400px;
+    top: 25%;
+    right: 105px;
+    h2 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+}
+
+@media (max-width: 780px) {
+  .ayuda .acesora {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  .contenido {
+    max-width: 250px;
+    top: 30%;
+    right: 155px;
+    h2 {
+      font-size: 25px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+  .btn-whatsapp img {
+    width: 70px;
+    position: absolute;
+    top: 100%;
+    right: -45%;
+  }
+}
+
+@media (max-width: 533px) {
+  .ayuda .acesora {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .contenido {
+    max-width: 250px;
+    top: 30%;
+    right: 50px;
+    h2 {
+      font-size: 22px;
+    }
+    p {
+      font-size: 11px;
+    }
+  }
+  .btn-whatsapp img {
+    width: 50px;
+    position: absolute;
+    top: 110%;
+    right: 7%;
+  }
+}
+@media (max-width: 500px) {
+  .contenido {
+    max-width: 250px;
+    top: 35%;
+    right: 40px;
+  }
+}
+
+/* --------- Estilos Footer ---------------- */
+footer {
+  background: var(--gris);
+}
+.pie_pagina {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 40px 0px;
+
+  p {
+    color: var(--blanco);
+  }
+  .informacion_politicas {
+    padding-top: 50px;
+  }
+  li {
+    margin-bottom: 10px;
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+    text-decoration: underline;
+  }
+
+  div:nth-child(2),
+  div:nth-child(3) {
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    padding-left: 10px;
+  }
+}
+
+.derechos_reservados {
+  color: var(--blanco);
+  text-align: center;
+  margin: 0;
+  padding-bottom: 10px;
+  font-size: 12px;
+}
+
+@media (max-width: 570px) {
+  .pie_pagina {
+    flex-direction: column;
+    justify-content: left;
+    p {
+      font-size: 10px;
+    }
+    .informacion_politicas {
+      padding-top: 0;
+    }
+  }
+  .pie_pagina div:nth-child(2),
+  .pie_pagina div:nth-child(3) {
+    border-left: none;
+    padding-left: 0;
+  }
+}

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="encabezado">
+      <img
+        src="assets/Hea.png"
+        alt="Team Food Service"
+        class="logo"
+        loading="lazy"
+      />
+
+      <button class="hamburger" id="hamburger">☰</button>
+
+      <ul id="menu">
+        <li><a href="">Quienes somos</a></li>
+        <li><a href="">Portafolio</a></li>
+        <li><a href="">Sostenibilidad</a></li>
+        <li><a href="">Clientes aliados</a></li>
+        <li><a href="">Creadores para creadores</a></li>
+        <li><a href="">Trabajemos juntos</a></li>
+        <li><a href="">Buscar</a></li>
+      </ul>
+
+      <div class="overlay" id="overlay"></div>
+    </header>
+    <main>
+      <section
+        class="primera_seccion cuerpo"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+      >
+        <div class="card grande">
+          <img
+            src="assets/aliados-en-tu-cocina.jpg"
+            alt="Aliados en tu cocina"
+            width="100%"
+            height="100%"
+            loading="lazy"
+          />
+          <div class="texto aliados_cocina">
+            <h2>
+              Aliados en tu cocina,<br />
+              expertos en cada <br />
+              ingrediente.
+            </h2>
+            <p>
+              Lideramos en alimentos que impulsan tu negocio, diseñados para
+              cocinas como la tuya.
+            </p>
+            <button class="boton"><a href="#">Leer más</a></button>
+          </div>
+        </div>
+
+        <div class="aliados">
+          <div class="card">
+            <img src="assets/trabajemos-juntos.png" alt="Trabajemos juntos" />
+            <div class="texto trabajemos_juntos">
+              <h2>Trabajemos juntos</h2>
+              <p style="margin: 0">Somos el mejor aliado para tu negocio.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="assets/clientes-y-aliados.png"
+              alt="Clientes y aliados"
+              loading="lazy"
+            />
+            <div class="texto clientes_aliados">
+              <h2 style="color: var(--verde)">Clientes y aliados</h2>
+              <p style="color: var(--verde); margin: 0">
+                Construyendo relaciones a largo plazo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <br /><br />
+      <section
+        class="segunda_seccion cuerpo"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <div class="card" style="background: #00286c">
+          <img src="assets/dagusto.png" alt="Dagusto" loading="lazy" />
+        </div>
+        <div class="card" style="background: #00bbb4">
+          <img
+            src="assets/jappi-barista.png"
+            alt="Jappi BARISTA"
+            loading="lazy"
+          />
+        </div>
+        <div class="card" style="background: #f29100">
+          <img src="assets/fry.png" alt="Fry" loading="lazy" />
+        </div>
+        <div class="card" style="background: #ffffff">
+          <img src="assets/mestre.png" alt="Mestre" loading="lazy" />
+        </div>
+      </section>
+      <br /><br />
+      <section
+        class="tercera_seccion cuerpo"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <div
+          class="card ingrediente_silencioso"
+          style="background: var(--amarillo); color: var(--verde)"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <div class="texto">
+            <h2 style="color: var(--verde)">
+              El ingrediente silencioso del éxito
+            </h2>
+            <p>
+              Nuestra trayectoria nos ha convertido en el aliado confiable de
+              las cocinas profesionales. Ofrecemos soluciones que responden con
+              calidad, experiencia y sabor.
+            </p>
+          </div>
+
+          <div class="imagen">
+            <img
+              src="assets/el-ingrediente-silencioso-del-exito.png"
+              alt="El ingrediente silencioso del exito"
+              loading="lazy"
+            />
+          </div>
+          <button class="btn_ingrediente_secreto boton">
+            <a href="#">Leer más</a>
+          </button>
+        </div>
+
+        <div
+          class="card nuestro_ingrediente"
+          style="background: var(--verde)"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <div class="img_nuestro_ingrediente">
+            <img
+              src="assets/nuestro-ingrediente-secreto-para-el-exito.png"
+              alt="Nuestro Ingrediente secreto para el exito"
+              loading="lazy"
+            />
+          </div>
+          <div class="texto" style="padding: 0 20px">
+            <h2 style="color: var(--blanco)">
+              Nuestro Ingrediente Secreto <br />para el Éxito
+            </h2>
+            <p style="color: var(--blanco)">
+              “Los productos de Team Food Service son nuestro ingrediente
+              secreto. Su calidad constante nos ha permitido crear postres
+              únicos y con un sabor inigualable.”
+            </p>
+            <i style="color: var(--blanco); font-size: 12px">
+              Carolina Pineda, Chef Pastelera - Dulces Creaciones.
+            </i>
+          </div>
+          <div class="acciones">
+            <button class="boton"><a href="#">Leer más</a></button>
+          </div>
+        </div>
+
+        <div
+          class="card receta_semana"
+          style="background: var(--amarillo)"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <div class="img_receta_semana">
+            <img
+              src="assets/receta-de-la-semana.png"
+              alt="Receta de la semana"
+              loading="lazy"
+            />
+          </div>
+          <div class="texto">
+            <h2>Receta de la semana</h2>
+            <p>
+              Lograr un croissant con el hojaldre ideal es un arte. Nuestros
+              productos están diseñados para darle a tu masa esa consistencia
+              perfecta, logrando capas crujientes por fuera y un interior suave
+              como una nube."
+            </p>
+            <p>
+              Con nuestra margarina de alta calidad Dagusto, tus creaciones
+              mantendrán la frescura y la textura por más tiempo, asegurando que
+              cada bocado sea una experiencia inolvidable para tus clientes.
+            </p>
+          </div>
+          <p
+            style="
+              color: var(--verde);
+              text-align: center;
+              font-weight: bold;
+              font-size: 15px;
+            "
+          >
+            DESCUBRE LA RECETA COMPLETA
+          </p>
+          <div class="acciones" style="text-align: center">
+            <button class="boton" style="background: var(--verde)">
+              <a href="#" style="color: var(--blanco)">HACIENDO CLIC AQUÍ</a>
+            </button>
+          </div>
+        </div>
+      </section>
+      <br /><br />
+      <section
+        class="cuarta_seccion cuerpo"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <div class="card">
+          <img
+            src="assets/bowl-granola.jpg"
+            alt="Granola"
+            width="100%"
+            loading="lazy"
+          />
+          <div class="texto">
+            <h2>Bowl granola</h2>
+            <p>
+              Con nuestro Aceite de Oliva Olivetto Profesional, tostar la
+              granola casera es más fácil que nunca, logrando un dorado
+              perfecto. Una receta versátil que resalta la frescura de tus
+              ingredientes.
+            </p>
+            <div>
+              <button class="boton"><a href="">Leer más</a></button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="assets/bunuelos-perfectos.png"
+            alt="Buñuelos perfectos"
+            width="100%"
+            loading="lazy"
+          />
+          <div class="texto">
+            <h2>Buñuelos perfectos</h2>
+            <p>
+              Nuestros aceites garantizan una fritura sin la sensación de grasa.
+              Gracias a su alto punto de humo, tus buñuelos tendrán una textura
+              increíblemente crujiente.
+            </p>
+            <div>
+              <button class="boton"><a href="">Leer más</a></button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="assets/late-frio.jpg"
+            alt="Late frio"
+            width="100%"
+            height="auto"
+            loading="lazy"
+          />
+          <div class="texto">
+            <h2>Latte frío</h2>
+            <p>
+              Nuestra línea Jappí Barista ha sido creada para lograr la
+              microespuma sedosa y estable que necesitas para el arte latte. Su
+              fórmula potencia el sabor de tu café, garantizando una experiencia
+              superior en cada taza
+            </p>
+            <div>
+              <button class="boton"><a href="">Leer más</a></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <br /><br />
+      <section
+        class="quinta_seccion"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <div class="contenedor_img">
+          <div>
+            <h2 style="color: var(--blanco)">
+              Innovación y <br />
+              responsabilidad <br />
+              con el planeta
+            </h2>
+
+            <p style="width: 80%; color: var(--blanco)">
+              En Team Food Service, la sostenibilidad es parte de nuestro ADN.
+              Desde la obtención de materias primas hasta nuestros procesos de
+              producción, estamos comprometidos con reducir nuestro impacto
+              ambiental y generar un cambio positivo en la sociedad.
+            </p>
+            <br />
+            <div>
+              <button class="boton" style="padding: 10px 30px">
+                <a href="">CONOCE MÁS AQUÍ </a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <br /><br />
+      <section
+        class="sexta_seccion ayuda cuerpo"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <div>
+          <img
+            style="border-radius: 30px"
+            src="assets/necesitas-ayuda.jpg"
+            alt="Asesora"
+            class="bg-img acesora"
+            loading="lazy"
+          />
+
+          <div class="contenido">
+            <h2>¿Necesitas ayuda?</h2>
+            <p>
+              Tu satisfacción es nuestra prioridad. Si tienes duda con tu pedido
+              o necesitas asesoría, nuestro equipo está listo para ayudarte en
+              cada paso.
+            </p>
+            <a href="https://wa.me/xxxxxxxxxx" class="btn-whatsapp">
+              <img src="assets/whatsapp.png" alt="WhatsApp" loading="lazy" />
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="">
+      <div class="pie_pagina">
+        <div>
+          <ul>
+            <li>
+              <img
+                src="assets/alianza-team.png"
+                alt="Alianza Team"
+                loading="lazy"
+              />
+            </li>
+            <li>
+              <p><b>Linea de atencion al consumidor</b></p>
+            </li>
+            <li>
+              <p>
+                (↓) <b>COLOMBIA</b><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;333
+                602 5714
+              </p>
+            </li>
+            <li>
+              <p>
+                (↓) <b>MEXICO</b><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;800 71 45
+                300
+              </p>
+            </li>
+            <li>
+              <p>(↓) <b>CHILE</b></p>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li class="informacion_politicas">
+              <p>
+                📋 Informacion nutricional <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;de sellos de advertencia
+              </p>
+            </li>
+            <li>
+              <p>🏛️ Nuestras Politicas</p>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <img
+                src="assets/redes-sosiales.png"
+                alt="Redes sociales"
+                loading="lazy"
+              />
+            </li>
+            <li>
+              <p><b>Linea de integridad</b></p>
+            </li>
+            <li>
+              <p>☎ <b>COLOMBIA</b> 01800 911 0011</p>
+            </li>
+            <li>
+              <p>☎ <b>MEXICO</b>01800 288 2872</p>
+            </li>
+            <li>
+              <p>☎ <b>CHILE</b>800 360 312</p>
+            </li>
+            <li>
+              <p>☎ <b>ESTADOS UNIDOS</b>888 265 9894</p>
+            </li>
+            <li><a href="#">🌐 https://teamfoods.alertline.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="derechos_reservados">
+        ©2025 TEAM FOODS COLOMBIA S.A. TODOS LOS DERECHOS RESERVADOS.
+      </p>
+    </footer>
+  </body>
+  <script src="index.js" defer></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</html>
