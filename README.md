@@ -1,4 +1,4 @@
-# Landing Page - Proyecto
+# Landing Page - Alianza Team
 
 Este proyecto consiste en una **landing page** diseñada para [SOCIAL AGENCIA GLOBAL].  
 La página está enfocada en ser ligera, responsiva y fácil de mantener.
